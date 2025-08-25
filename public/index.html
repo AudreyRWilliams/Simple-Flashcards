@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Simple Flashcards</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Simple Flashcards</h1>
+
+    <div class="card">
+      <h2>Decks</h2>
+      <div id="decks"></div>
+      <form id="newDeckForm" class="row">
+        <input id="deckName" placeholder="Deck name" required />
+        <input id="deckDesc" placeholder="Description (optional)" />
+        <button class="btn primary" type="submit">Create Deck</button>
+      </form>
+    </div>
+
+    <div class="card" id="deckView" style="display:none;">
+      <div class="row" style="justify-content:space-between;align-items:center;">
+        <h2 id="deckTitle"></h2>
+        <button class="btn" id="backToDecks">← Back to decks</button>
+      </div>
+      <p id="deckDescText"></p>
+
+      <h3>Cards</h3>
+      <div id="cards"></div>
+
+      <h3>Add a card</h3>
+      <form id="newCardForm" class="row">
+        <input id="front" placeholder="Front (question)" required />
+        <input id="back" placeholder="Back (answer)" required />
+        <button class="btn" type="submit">Add</button>
+      </form>
+
+      <h3>Study</h3>
+      <div id="study" class="study"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

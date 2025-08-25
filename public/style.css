@@ -1,0 +1,17 @@
+body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background:#f6f7fb; margin:0; }
+.container { max-width: 900px; margin: 1.5rem auto; padding: 0 1rem; }
+h1 { margin: 0 0 1rem; }
+.card { background:#fff; border:1px solid #e5e8ef; border-radius:10px; padding:1rem; margin-bottom:1rem; }
+.row { display:flex; gap:.5rem; align-items:center; }
+.deck-row { justify-content:space-between; border:1px solid #eee; border-radius:8px; padding:.6rem .8rem; margin-bottom:.5rem; background:#fff; }
+.card-row { display:flex; justify-content:space-between; padding:.5rem .6rem; border:1px solid #eee; border-radius:8px; margin-bottom:.4rem; }
+.btn { padding:.4rem .7rem; border:1px solid #bbb; border-radius:6px; background:#fafafa; cursor:pointer; }
+.btn.primary { background:#1e88e5; color:#fff; border-color:#1e88e5; }
+.btn.danger { background:#e53935; color:#fff; border-color:#e53935; }
+input { padding:.35rem .5rem; border:1px solid #ccc; border-radius:6px; }
+.pill { font-size:12px; padding:.15rem .45rem; border-radius:999px; background:#eef3ff; color:#2c5fda; }
+.muted { color:#666; }
+.study { margin-top:.5rem; }
+.study-card { border:1px dashed #ccc; border-radius:10px; padding:1rem; background:#fff; }
+.study-card .q { font-weight:600; font-size:18px; }
+.study-card .a { margin:.6rem 0 1rem; font-style:italic; color:#333; }

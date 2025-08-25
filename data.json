@@ -1,0 +1,53 @@
+{
+  "decks": [
+    {
+      "id": "meql5279atz81x",
+      "name": "Demo: Basic Spanish",
+      "description": "English → Spanish basics",
+      "createdAt": "2025-08-25T03:56:31.461Z"
+    },
+    {
+      "id": "meqldliw8vqw2n",
+      "name": "Demo: Basic French",
+      "description": "",
+      "createdAt": "2025-08-25T04:03:09.752Z"
+    }
+  ],
+  "cards": [
+    {
+      "id": "meql529isy53d1",
+      "deckId": "meql5279atz81x",
+      "front": "Hello",
+      "back": "Hola",
+      "createdAt": "2025-08-25T03:56:31.542Z"
+    },
+    {
+      "id": "meql529ilhmkng",
+      "deckId": "meql5279atz81x",
+      "front": "Thank you",
+      "back": "Gracias",
+      "createdAt": "2025-08-25T03:56:31.542Z"
+    },
+    {
+      "id": "meqlbpjbfi7ubt",
+      "deckId": "meql5279atz81x",
+      "front": "dog",
+      "back": "perro",
+      "createdAt": "2025-08-25T04:01:41.639Z"
+    },
+    {
+      "id": "meqlgbbbxehzwm",
+      "deckId": "meqldliw8vqw2n",
+      "front": "Bonjour",
+      "back": "Hello",
+      "createdAt": "2025-08-25T04:05:16.487Z"
+    },
+    {
+      "id": "meqlh1en5h6mbl",
+      "deckId": "meqldliw8vqw2n",
+      "front": "Chien",
+      "back": "dog",
+      "createdAt": "2025-08-25T04:05:50.303Z"
+    }
+  ]
+}
