@@ -9,7 +9,7 @@ This project uses only Express 4 + vanilla HTML/JS/CSS (no React), and saves dat
 - Below we've gone back to our Decks and added a new one entitled `Demo: Basic French`:
 <img width="698" height="260" alt="Screen Shot 2025-08-25 at 12 03 18 AM" src="https://github.com/user-attachments/assets/1c0e7d4e-97b4-4f36-9db2-74d59e481b2a" /> <br>
 - Here we've added 3 new cards to the Basic French deck:
-<img width="696" height="718" alt="Screen Shot 2025-08-25 at 12 05 59 AM" src="https://github.com/user-attachments/assets/5c17db8b-912d-4d9c-b774-a7ea6ee99558" />
+<img width="696" height="718" alt="Screen Shot 2025-08-25 at 12 05 59 AM" src="https://github.com/user-attachments/assets/5c17db8b-912d-4d9c-b774-a7ea6ee99558" /> <br>
 - Here we've successfully deleted a card from the deck:
 <img width="691" height="677" alt="Screen Shot 2025-08-25 at 12 06 33 AM" src="https://github.com/user-attachments/assets/76abc629-8d07-441c-ad23-66609f8409e8" />
 
