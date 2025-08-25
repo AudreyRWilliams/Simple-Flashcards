@@ -11,3 +11,9 @@ This project uses only Express 4 + vanilla HTML/JS/CSS (no React), and saves dat
 <img width="697" height="630" alt="Screen Shot 2025-08-25 at 12 04 45 AM" src="https://github.com/user-attachments/assets/641ad518-2d69-4210-ab5c-a52de594422f" />
 <img width="694" height="534" alt="Screen Shot 2025-08-25 at 12 04 01 AM" src="https://github.com/user-attachments/assets/1ce9f5d0-1204-491b-950e-889089da0566" />
 <img width="698" height="260" alt="Screen Shot 2025-08-25 at 12 03 18 AM" src="https://github.com/user-attachments/assets/1c0e7d4e-97b4-4f36-9db2-74d59e481b2a" />
+
+## Below are the steps to build this project:
+## 1) Create the project & init npm
+## 2) Create files/folders
+## 3) Add an npm start script
+## 4) Commit and push to GitHub
