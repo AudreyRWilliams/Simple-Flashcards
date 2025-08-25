@@ -34,10 +34,10 @@ Open your browser at http://localhost:3000
 You’ll see the demo deck, can create new decks, add cards, study, and delete cards. Data persists in data.json.
 
 ## 4) Commit and push to GitHub
-Create a new (empty) repo on GitHub (e.g., FlashcardSimple). Then: <br>
+Create a new (empty) repo on GitHub (e.g., Simple-Flashcards). Then: <br>
 - cd ~/FlashcardSimple
 - git add .
 - git commit -m "Initial simple flashcards (Express + vanilla JS)"
 - git branch -M main
-- git remote add origin https://github.com/<your-username>/FlashcardSimple.git
+- git remote add origin https://github.com/AudreyRWilliams/FlashcardSimple.git
 - git push -u origin main
