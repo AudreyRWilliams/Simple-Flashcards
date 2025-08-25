@@ -28,7 +28,7 @@ Create this structure: <br>
 ## 3) Add an npm start script
 Open package.json and add this inside "scripts": <br>
 <img width="253" height="127" alt="Screen Shot 2025-08-25 at 1 59 02 AM" src="https://github.com/user-attachments/assets/1cbda608-8453-435f-991a-38f2674e0f4d" /> <br>
-Now you can run:
+Now you can run: <br>
 <img width="93" height="75" alt="Screen Shot 2025-08-25 at 1 59 59 AM" src="https://github.com/user-attachments/assets/2aaf109a-26b8-47fd-a4d8-e6353507bf47" /> <br>
 Open your browser at http://localhost:3000
 You’ll see the demo deck, can create new decks, add cards, study, and delete cards. Data persists in data.json.
