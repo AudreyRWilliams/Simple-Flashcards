@@ -20,5 +20,24 @@ Open Terminal: <br>
 <img width="211" height="163" alt="Screen Shot 2025-08-25 at 1 30 13 AM" src="https://github.com/user-attachments/assets/c3c14ca5-71fc-4baf-b2fa-8d490b9e8ba2" />
 
 ## 2) Create files/folders
+Create this structure: <br>
+<img width="368" height="220" alt="Screen Shot 2025-08-25 at 1 56 27 AM" src="https://github.com/user-attachments/assets/f931d41b-f2e6-4776-a8dd-ddaee57720bc" />
+- data.json (initial empty DB)
+- server.js (Express backend + simple JSON storage)
+
 ## 3) Add an npm start script
+Open package.json and add this inside "scripts": <br>
+<img width="253" height="127" alt="Screen Shot 2025-08-25 at 1 59 02 AM" src="https://github.com/user-attachments/assets/1cbda608-8453-435f-991a-38f2674e0f4d" /> <br>
+Now you can run:
+<img width="93" height="75" alt="Screen Shot 2025-08-25 at 1 59 59 AM" src="https://github.com/user-attachments/assets/2aaf109a-26b8-47fd-a4d8-e6353507bf47" /> <br>
+Open your browser at http://localhost:3000
+You’ll see the demo deck, can create new decks, add cards, study, and delete cards. Data persists in data.json.
+
 ## 4) Commit and push to GitHub
+Create a new (empty) repo on GitHub (e.g., FlashcardSimple). Then: <br>
+- cd ~/FlashcardSimple
+- git add .
+- git commit -m "Initial simple flashcards (Express + vanilla JS)"
+- git branch -M main
+- git remote add origin https://github.com/<your-username>/FlashcardSimple.git
+- git push -u origin main
