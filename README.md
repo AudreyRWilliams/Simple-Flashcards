@@ -1,5 +1,6 @@
 # Simple Flashcard App
-This project uses only Express 4 + vanilla HTML/JS/CSS (no React), and saves data to a small data.json file.
+This project uses only Express 4 + vanilla HTML/JS/CSS (no React), and saves data to a small data.json file.  The pictures below demonstrate each feature of the app:
+- This is the starting screen which shows all of the available flashcard decks that you can go through.  Starting off, the only deck that's available because it's hard-coded into the server.js program is the `Demo: Basic Spanish`: <br>
 <img width="692" height="215" alt="Screen Shot 2025-08-25 at 12 00 50 AM" src="https://github.com/user-attachments/assets/1f3c1914-c346-40c0-8471-2e32aa431196" />
 
 <img width="698" height="663" alt="Screen Shot 2025-08-25 at 12 01 12 AM" src="https://github.com/user-attachments/assets/672fd2b0-e11d-4878-b920-68e7fb9461a0" />
