@@ -1,3 +1,4 @@
+// el(id) is a helper function that grabs en element by ID
 const el = id => document.getElementById(id);
 const decksDiv = el('decks');
 const deckView = el('deckView');
@@ -6,15 +7,19 @@ const deckDescText = el('deckDescText');
 const cardsDiv = el('cards');
 const studyDiv = el('study');
 
+// Stores which deck is currently open and stores that deck's cards
 let currentDeckId = null;
 let currentCards = [];
 
+// Wraps the fetch function so that I'll get thrown an error if the response is not OK
 async function fetchJSON(url, opts) {
   const res = await fetch(url, opts);
   if (!res.ok) throw new Error(await res.text());
   return res.json();
 }
 
+// api/decks is fetched from the backend, and each deck is rendered with it's info.
+// The server.js populates some demo data if the json db is empty.
 async function loadDecks() {
   const decks = await fetchJSON('/api/decks');
   decksDiv.innerHTML = decks.map(d => `
@@ -31,6 +36,8 @@ async function loadDecks() {
   `).join('') || '<div class="muted">No decks yet</div>';
 }
 
+// loads deck details. saves deck ID and cards. displays card and study mode with render calls.
+// Makes sure deck is visible
 async function openDeck(id) {
   const deck = await fetchJSON(`/api/decks/${id}`);
   currentDeckId = deck.id;
@@ -43,6 +50,7 @@ async function openDeck(id) {
   window.scrollTo(0,0);
 }
 
+// Shows all cards in deck. Each card has a delete button that calls deleteCard(id)
 function renderCards() {
   if (!currentCards.length) {
     cardsDiv.innerHTML = '<div class="muted">No cards yet</div>';
@@ -56,6 +64,8 @@ function renderCards() {
   `).join('');
 }
 
+// shows the card's front. lets you click 'show answer'. then you get prev/next buttons.
+// at the end, shows 'study session done!' --- interactive study feature
 function renderStudy() {
   if (!currentCards.length) { studyDiv.innerHTML = '<div class="muted">Add cards to study.</div>'; return; }
   let i = 0;
@@ -87,6 +97,7 @@ function renderStudy() {
   draw();
 }
 
+// calls the backend to delete the card. removes it from currentCards. re-renders the UI
 async function deleteCard(id) {
   await fetchJSON(`/api/cards/${id}`, { method:'DELETE' });
   currentCards = currentCards.filter(c => c.id !== id);
@@ -94,6 +105,7 @@ async function deleteCard(id) {
   renderStudy();
 }
 
+// submits a new deck to /api/decks. clears the form and reloads the deck list.
 el('newDeckForm').addEventListener('submit', async e => {
   e.preventDefault();
   const name = el('deckName').value.trim();
@@ -109,6 +121,7 @@ el('newDeckForm').addEventListener('submit', async e => {
   loadDecks();
 });
 
+// adds a new card to the current deck. Updates the UI immediately.
 el('newCardForm').addEventListener('submit', async e => {
   e.preventDefault();
   const front = el('front').value.trim();
@@ -126,12 +139,13 @@ el('newCardForm').addEventListener('submit', async e => {
   renderStudy();
 });
 
+// hides deck view. reloads deck list.
 el('backToDecks').addEventListener('click', () => {
   deckView.style.display = 'none';
   loadDecks();
 });
 
-// basic HTML escaper
+// basic HTML escaper before putting text into the DOM
 function escapeHtml(s){
   return String(s).replace(/[&<>"']/g, c => ({
     '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
@@ -141,6 +155,6 @@ function escapeHtml(s){
 // initial load
 loadDecks();
 
-// expose for inline handlers
+// expose for inline handlers globally so inline HTML buttons can call them
 window.openDeck = openDeck;
 window.deleteCard = deleteCard;
